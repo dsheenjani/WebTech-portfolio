@@ -16,7 +16,7 @@ HTML • CSS • JavaScript • Python • FastAPI • Transformers • Streamli
 
 ## Live Demo
 You can view the live site here:  
-[https://sheenjani.github.io/sheenjani-portfolio/](https://sheenjani.github.io/sheenjani-portfolio/)
+[https://dsheenjani.github.io/WebTech-portfolio/](https://dsheenjani.github.io/WebTech-portfolio/)
 
 ---
 
