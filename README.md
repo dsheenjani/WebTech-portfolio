@@ -1,4 +1,4 @@
-#Sheenjani’s Portfolio
+# Sheenjani’s Portfolio
 
 Welcome to my personal portfolio website — a showcase of who I am, what I build, and what I love about tech.
 
