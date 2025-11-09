@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheenjani | dsheenjani.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">sheenjani | portfolio</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">expertise</a></li>
+                    <li><a href="#portfolio">projects</a></li>
+                    <li><a href="#contact">connect</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- Mobile Menu Toggle Icon -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>aspiring software engineer</p>
+                <h1>hello hello, i’m sheenjani.<br> I design, build, and occasionally<br> break things (on purpose).</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Profile Image -->
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+
+                <!-- About Content -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1>
+                    <p>I'm a super excited sophomore in Engineering with a love for Coding, Coffee, and Comedy. I’m currently pursuing a B.Tech in Computer Science and Engineering at Manipal University Jaipur, where I’m diving deep into the world of technology and software development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Education</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Experience</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>AI/ML Innovator</span><br>Transforming data into intelligent systems that understand and adapt to real-world contexts.</li>
+                            <li><span>Web Developer</span><br>Designing interactive, responsive experiences that blend creativity with functionality.</li>
+                            <li><span>Tech Leader</span><br>Driving collaboration, innovation, and growth through hands-on mentorship and strategy.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>AI/ML Project Intern — Petonic Infotech</span><br>June 2025 – July 2025<br>Worked on “SolveAI,” an initiative leveraging AI and ML to solve business problems. Contributed to model design, data analysis, and implementation of data-driven solutions.</li>
+                            <li><span>Managing Director — Randomize();</span><br>June 2025 – Present<br>Leading a 35+ core team and 550+ members, driving public relations, outreach, and sponsorship strategy for MUJ’s official computing society. Enhancing the club’s brand presence through collaborations and large-scale tech initiatives.</li>
+                            <li><span>Head of Curations — Randomize();</span><br>June 2024 – May 2025<br>Directed event ideation, content curation, and partnerships for a 1000+ member tech community. Organized workshops and hackathons, including a live competitive programming event with 150+ participants.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Manipal University Jaipur</span><br>B.Tech in Computer Science & Engineering (AI & ML), 2023–2027</li>
+                            <li><span>Delhi Public School, Ruby Park</span><br>Class 12 (PCM + CS), 2023</li>
+                            <li><span>St. Michael's School</span><br>Class 10 (ICSE), 2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">what i do</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>AI & Machine Learning Development</h2>
+                    <p>Designing intelligent systems that transform data into insights. From model building and evaluation to real-world deployment, I craft scalable AI solutions that make technology think smarter.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web & Software Development</h2>
+                    <p>Building responsive, efficient, and visually engaging web applications. Skilled in HTML, CSS, JavaScript, Python, and cloud technologies to create seamless digital experiences.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Technical Leadership & Event Curation</h2>
+                    <p>As Managing Director at Randomize(), I lead a 35+ core team, drive university-level tech events, and collaborate with startups and sponsors to grow a 1000+ member tech community.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/promptcraft.png">
+                    <div class="layer">
+                        <h3>PromptCraft — Context-Aware Text-to-Image Synthesis</h3>
+                        <p>Bridging creativity and AI by transforming nuanced text prompts into expressive images.<br>Built using Python, Transformers, Stable Diffusion, and Flask/Streamlit, PromptCraft interprets emotion and context to generate visuals that align with user intent.</p>
+                        <a href="javascript:void(0);"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/serenai.avif">
+                    <div class="layer">
+                        <h3>SerenAI — AI-Powered Medical Condition Recommender & QA System</h3>
+                        <p>Building an intelligent healthcare assistant that recommends likely medical conditions based on patient inputs.<br>Developed with Python, FastAPI, GPT-2, and Transformers to enable accurate recommendations and natural conversational responses.</p>
+                        <a href="javascript:void(0);"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/digital twin.webp">
+                    <div class="layer">
+                        <h3>AI Digital Twin — Intelligent Simulation System</h3>
+                        <p>Developing a virtual “digital twin” that mirrors real-world behavior using machine learning and real-time data integration.<br>This project explores predictive analytics, human–AI interaction, and personalized digital modeling to optimize performance and understanding.</p>
+                        <a href="javascript:void(0);"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dsheenjani@gmail.com</p>
+                <p><i class="fa-solid fa-phone-square"></i>8389004293</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/sheenjaniii?igsh=enp3czV4aTVoeTRu&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dsheenjani"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Sheenjani resume Apr2025.docx" download class="btn btn2">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+            <div class="contact-right">
+                <h1 class="sub-title">get in touch</h1>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">
+                        <i class="fa-solid fa-paper-plane"></i> Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>&copy; Sheenjani. All rights reserved.</p>
+    </div>
+
+    <!-- Floating Elements -->
+    <div id="floating-elements">
+        <div class="floating-item" onclick="showFact('Almost made it to black belt before quitting karate — once accidentally kicked a guy right in the face during practice.', event)"><i class="fa-solid fa-fist-raised"></i></div>
+        <div class="floating-item" onclick="showFact('My comfort movie? “To All the Boys I’ve Loved Before.” Don’t judge — it’s top-tier feel-good cinema.', event)"><i class="fa-solid fa-film"></i></div>
+        <div class="floating-item" onclick="showFact('Biryani and momos are undefeated. Sorry, America — spice is supposed to *taste* like something.', event)"><i class="fa-solid fa-utensils"></i></div>
+        <div class="floating-item" onclick="showFact('Lotus. Elegant. Calm. Unmatched. The best flower, no debate.', event)"><i class="fa-solid fa-seedling"></i></div>
+        <div class="floating-item" onclick="showFact('Huskies are drama queens. Golden retrievers? Absolute goofballs — my kind of dog.', event)"><i class="fa-solid fa-dog"></i></div>
+        <div class="floating-item" onclick="showFact('Childhood legends: Oswald, Noddy, and Thomas the Train. Simpler times, cooler tunes.', event)"><i class="fa-solid fa-child"></i></div>
+        <div class="floating-item" onclick="showFact('Certified sitcom addict — F.R.I.E.N.D.S., Brooklyn Nine-Nine, HIMYM, you name it, I’ve laughed through it.', event)"><i class="fa-solid fa-tv"></i></div>
+    </div>
+
+    <script>
+        // Tab Switching Script
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Side Menu Script (for mobile)
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // Floating Elements Script
+        let pausedItem = null;
+        let currentTimeout = null;
+
+        function showFact(fact, event) {
+            event.stopPropagation();
+
+            // Remove any existing fact display
+            const existingFact = document.querySelector('.fact-display');
+            if (existingFact) {
+                existingFact.remove();
+                if (currentTimeout) {
+                    clearTimeout(currentTimeout);
+                    currentTimeout = null;
+                }
+                if (pausedItem) {
+                    pausedItem.style.animationPlayState = 'running';
+                }
+            }
+
+            // Get the floating item
+            const floatingItem = event.target.closest('.floating-item');
+
+            // Pause animation of clicked item
+            floatingItem.style.animationPlayState = 'paused';
+            pausedItem = floatingItem;
+
+            // Create fact display element
+            const factDiv = document.createElement('div');
+            factDiv.className = 'fact-display';
+            factDiv.textContent = fact;
+
+            // Position it next to the clicked element
+            const rect = event.target.getBoundingClientRect();
+            factDiv.style.left = `${rect.right + window.scrollX + 10}px`;
+            factDiv.style.top = `${rect.top + window.scrollY}px`;
+
+            document.body.appendChild(factDiv);
+
+            // Function to remove fact and resume animation
+            const removeFact = () => {
+                if (currentTimeout) {
+                    clearTimeout(currentTimeout);
+                    currentTimeout = null;
+                }
+                if (factDiv.parentNode) {
+                    factDiv.remove();
+                }
+                if (pausedItem) {
+                    pausedItem.style.animationPlayState = 'running';
+                    pausedItem = null;
+                }
+                document.removeEventListener('click', removeFact);
+            };
+
+            // Remove on document click (delayed to avoid immediate trigger)
+            setTimeout(() => document.addEventListener('click', removeFact), 0);
+
+            // Remove on scroll
+            window.addEventListener('scroll', removeFact);
+
+            // Remove after 5 seconds
+            currentTimeout = setTimeout(removeFact, 5000);
+        }
+
+        // Animate floating elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingItems = document.querySelectorAll('.floating-item');
+            const totalItems = floatingItems.length;
+
+            function activateRandomItems() {
+                // Deactivate all items
+                floatingItems.forEach(item => item.classList.remove('active'));
+
+                // Randomly select 2 or 3 items to activate
+                const numToActivate = Math.random() < 0.5 ? 2 : 3;
+                const indices = [];
+                while (indices.length < numToActivate) {
+                    const randomIndex = Math.floor(Math.random() * totalItems);
+                    if (!indices.includes(randomIndex)) {
+                        indices.push(randomIndex);
+                    }
+                }
+
+                // Activate selected items with random positions and delays
+                indices.forEach(index => {
+                    const item = floatingItems[index];
+                    item.classList.add('active');
+                    item.style.left = `${Math.random() * 80 + 10}%`; // Random horizontal position between 10% and 90%
+                    item.style.animationDelay = `${Math.random() * 5}s`; // Random delay
+                    item.style.animationDuration = `${20 + Math.random() * 10}s`; // Random duration between 20-30s
+                });
+            }
+
+            // Initial activation
+            activateRandomItems();
+
+            // Reactivate every 10-15 seconds
+            setInterval(activateRandomItems, 10000 + Math.random() * 5000);
+        });
+    </script>
+</body>
+</html>
